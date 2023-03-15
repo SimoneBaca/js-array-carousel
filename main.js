@@ -22,6 +22,8 @@ Costruiamo del carosello una versione statica contenente solamente un'immagine. 
 Scriviamo sempre prima per punti il nostro algoritmo in italiano per capire cosa vogliamo fare
 Al momento giusto (ihihhi starà a voi capire quale) rispondete a questa domanda: "Quanti cicli servono?"*/
 
+
+
 const imgs = ["img/01.webp", "img/02.webp", "img/03.webp", "img/04.webp", "img/05.webp",];
 const slide = document.querySelector(".slide");
 
@@ -46,7 +48,7 @@ previousBtn.addEventListener("click", function(){
 
     if (index >0) {
 
-        allImgs[carouselIndex].classList.toggle("hidden");
+        allImgs[index].classList.toggle("hidden");
         index--;
         allImgs[index].classList.toggle("hidden");
 
